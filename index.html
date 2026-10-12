@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyTrip</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>bookmy<span>trip.</span></h2>
+      <p>☎ Call 24/7 Support: +91 44 1234 5678</p>
+      <input type="search" placeholder="Search website" />
+    </header>
+
+    <nav>
+      <a href="#hotels">Hotels</a>
+      <a href="#">Flights</a>
+      <a href="#">Vacations</a>
+      <a href="#deals">Hot Deals</a>
+      <a href="#blogs">Blogs</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Discover Beautiful Hotels</h1>
+        <p>Enjoy your next holiday with BookMyTrip!</p>
+        <h3>$1200 Inclusive of food and dinner</h3>
+      </div>
+
+      <form id="bookingForm">
+        <h3>Book Your Trip</h3>
+
+        <select id="type">
+          <option>Hotels</option>
+          <option>Flights</option>
+        </select>
+
+        <input
+          type="text"
+          id="location"
+          placeholder="Enter location"
+          required
+        />
+
+        <input type="date" id="date" required />
+
+        <select id="rooms">
+          <option>1 Room</option>
+          <option>2 Rooms</option>
+          <option>3 Rooms</option>
+        </select>
+
+        <select id="adults">
+          <option>2 Adults</option>
+          <option>1 Adult</option>
+          <option>3 Adults</option>
+        </select>
+
+        <select id="children">
+          <option>0 Children</option>
+          <option>1 Child</option>
+          <option>2 Children</option>
+        </select>
+
+        <button type="submit">SEARCH</button>
+        <p id="message"></p>
+      </form>
+    </section>
+
+    <section class="section" id="hotels">
+      <h2>Popular Hotels</h2>
+
+      <div class="hotel-container">
+        <div class="hotel">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600"
+            alt="Luxury hotel"
+          />
+          <h3>Hotel Taj Mahal Palace</h3>
+          <p>Mumbai, India</p>
+          <b>$2000</b>
+        </div>
+
+        <div class="hotel">
+          <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600"
+            alt="Resort swimming pool"
+          />
+          <h3>Mont Blanc</h3>
+          <p>Zurich, Switzerland</p>
+          <b>$3200</b>
+        </div>
+
+        <div class="hotel">
+          <img
+            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600"
+            alt="Hotel room"
+          />
+          <h3>Hotel Marriott</h3>
+          <p>Melbourne, Australia</p>
+          <b>$1200</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deals">
+      <h2>Hot Deals</h2>
+
+      <div class="deal-container">
+        <div class="deal deal-one">
+          <h2>PARIS EUROSTAR BREAKS</h2>
+          <p>Special offers from $350</p>
+        </div>
+
+        <div class="deal deal-two">
+          <h2>COASTAL GETAWAYS</h2>
+          <p>Enjoy beautiful beaches</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h3>Latest Blogs</h3>
+      <p>Best places to visit in India</p>
+    </section>
+
+    <footer>
+      <div>
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Terms and Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div>
+        <h3>Customer Support</h3>
+        <p>Contact</p>
+        <p>FAQ</p>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <p>Facebook | Instagram | LinkedIn</p>
+      </div>
+
+      <div>
+        <h3>Don't miss our deals!</h3>
+        <form id="subscribeForm">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscribeMessage"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
